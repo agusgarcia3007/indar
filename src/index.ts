@@ -84,7 +84,7 @@ const server = serve({
       GET: notificationRoutes.get,
     },
 
-    // --- SPA catch-all (Bun bundles the HTML + its scripts/CSS) ---
+    // --- SPA catch-all (Bun serves bundled assets as static routes with higher priority) ---
     "/*": index,
   },
 
